@@ -1,0 +1,28 @@
+<div class="index">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>ClassRoom</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="matter in matters">
+        <td>{{$index}}</td>
+        <td>{{matter.name}}</td>
+        <td>{{matter.classroom}}</td>
+        <td>{{matter.startTime}}</td>
+        <td>{{matter.endTime}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="centered" collapse="isCollapsed">
+    <h2>Cargando Horario</h2>
+    <fa name="spinner" size="2" pulse ng-style="{'color': '#2C3E50'}"></fa>
+  </div>
+  
+</div>
